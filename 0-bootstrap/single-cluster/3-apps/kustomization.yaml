@@ -1,4 +1,6 @@
 resources:
+- argocd/products-ms/dev.yaml
+
 #- argocd/ace/cicd.yaml
 #- argocd/ace/dev.yaml
 #- argocd/ace/stage.yaml
