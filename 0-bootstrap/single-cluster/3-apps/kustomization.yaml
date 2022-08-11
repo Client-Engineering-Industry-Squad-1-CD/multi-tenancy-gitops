@@ -1,5 +1,5 @@
 resources:
-- argocd/products-db/dev.yaml
+# - argocd/products-db/dev.yaml
 
 - argocd/products-ms/dev.yaml
 
