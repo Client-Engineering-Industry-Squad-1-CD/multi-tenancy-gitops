@@ -2,6 +2,7 @@ resources:
 - argocd/products-db/dev.yaml
 
 - argocd/products-ms/dev.yaml
+- argocd/products-ms/shared-ci.yaml
 
 - argocd/products-ui/dev.yaml
 
