@@ -24,6 +24,10 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: dev
     server: https://kubernetes.default.svc
+  - namespace: dev-bu1
+    server: https://kubernetes.default.svc
+  - namespace: dev-bu2
+    server: https://kubernetes.default.svc
   - namespace: staging
     server: https://kubernetes.default.svc
   - namespace: prod
