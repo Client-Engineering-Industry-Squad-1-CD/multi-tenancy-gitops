@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: apps-products-db-dev-bu2
+  annotations:
+    argocd.argoproj.io/sync-wave: "300"
+  labels:
+    gitops.tier.layer: applications
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: dev-bu2
+    server: https://kubernetes.default.svc
+  project: applications
+  source:
+    path: products-db/overlays/dev-bu2
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences:
+  - group: apps.openshift.io
+    kind: DeploymentConfig
+    name: products-db
+    namespace: dev-bu2
+    jsonPointers:
+    - /spec/template/spec/containers/0/image

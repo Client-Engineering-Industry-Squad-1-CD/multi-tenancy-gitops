@@ -1,7 +1,11 @@
 resources:
 - argocd/products-db/dev.yaml
+- argocd/products-db/dev-bu1.yaml
+- argocd/products-db/dev-bu2.yaml
 
 - argocd/products-ms/dev.yaml
+- argocd/products-ms/dev-bu1.yaml
+- argocd/products-ms/dev-bu2.yaml
 - argocd/products-ms/shared-ci.yaml
 
 - argocd/products-ui/dev.yaml
